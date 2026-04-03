@@ -11,12 +11,7 @@ if img is None:
 # 灰度化
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-# 显示原图和灰度图
-cv2.imshow("Original", img)
-cv2.imshow("Gray", gray)
+# 保存灰度图
+cv2.imwrite("Marsha_gray.jpg", gray)
 
-# 等待按键
-cv2.waitKey(0)
-
-# 关闭窗口
-cv2.destroyAllWindows()
+print("灰度图已保存为 Marsha_gray.jpg")
